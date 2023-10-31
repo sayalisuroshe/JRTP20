@@ -14,11 +14,14 @@ public class PasswordService {
 		
 	}
 	public static String decode(String encodetxt) {
+		
 		Decoder decoder = Base64.getDecoder();
 		byte[] decode = decoder.decode(encodetxt);
 		return new String(decode);//converting byte array to string by using string constructor
 		}
    public static void main(String args[]) {
+	   //making changes for bug 289
+	   String name ="Rahul";
 	  String  encode=PasswordService.encode("sayali");
 	   System.out.println(encode);  
 	   System.out.println(PasswordService.decode(encode)); 
