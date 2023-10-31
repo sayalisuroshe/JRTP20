@@ -6,6 +6,9 @@ import java.util.Base64.Encoder;
 
 public class PasswordService {
 	 int i=0;
+	 //making changes for bug fixing  101
+	 int j=9;
+	 int k=8;
 	public static String encode(String txt) {
 		
 		Encoder encoder=Base64.getEncoder();
